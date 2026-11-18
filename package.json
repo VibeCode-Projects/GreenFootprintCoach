@@ -1,0 +1,25 @@
+{
+  "name": "eco-habit-coach-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-Powered Eco-Habit & Green Footprint Coach - Full-Stack BCA Academic Project",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build:client": "npm run build --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "keywords": [
+    "eco-habit",
+    "carbon-footprint",
+    "sustainability",
+    "gemini-ai",
+    "full-stack",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "BCA Final Year Project",
+  "license": "ISC"
+}

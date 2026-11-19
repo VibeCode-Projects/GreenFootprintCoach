@@ -10,7 +10,7 @@ dotenv.config();
 const { connectDB } = require('./config/db');
 const { errorHandler } = require('./middleware/errorMiddleware');
 const { apiLimiter } = require('./middleware/rateLimiter');
-const { seedInitialChallenges } = require('./utils/seedData');
+const { seedDatabase } = require('./utils/seedData');
 
 // Route imports
 const authRoutes = require('./routes/authRoutes');
@@ -95,7 +95,7 @@ let server;
 async function startServer() {
   try {
     await connectDB();
-    await seedInitialChallenges();
+    await seedDatabase();
 
     server = app.listen(PORT, () => {
       console.log(`=======================================================`);

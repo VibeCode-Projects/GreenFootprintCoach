@@ -47,6 +47,8 @@ coverage/
 tmp/
 temp/
 .temp/
+*.pid
+.*.pid
 report_print.html
 
 # Operating System Files
